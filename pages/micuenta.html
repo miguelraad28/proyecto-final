@@ -18,16 +18,40 @@
         <span class="span-logo">
             <a href="../index.html"><img class="logo-top" src="../images/logo_infusa.png"></a>
         </span>
-        <nav>
-            <ul class="menu">
-                <a href="../index.html"><li class="menu-item">INICIO</li></a>
-                <a href="productos.html"><li class="menu-item">PRODUCTOS</li></a>
-                <a href="tupaquete.html"><li class="menu-item">SEGUÍ TU PAQUETE</li></a>
-                <a href="contacto.html"><li class="menu-item">CONTACTO</li></a>
-            </ul>
-            <ul class="opciones">
-                <a href="micuenta.html"><li class="menu-item">MI CUENTA</li></a>
-            </ul>
+        <!-- BARRA NAVEGACION BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg navbar-light color-propio">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                            <ul class="dropdown-menu color-submenu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="productos.html">TODOS LOS PRODUCTOS</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">MAZOS</a></li>
+                                <li><a class="dropdown-item" href="#">VELAS</a></li>
+                                <li><a class="dropdown-item" href="#">LIMPIEZA</a></li>
+                                <li><a class="dropdown-item" href="#">TAROT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="tupaquete.html">SEGUÍ TU PAQUETE</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="micuenta.html">MI CUENTA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- FIN HEADER -->
@@ -35,11 +59,17 @@
     <main>
         <section>
             <div class="iniciar-sesion">
-                    <label for="login-email">Email</label>
-                    <input class="input-escribir" type="email" name="email-iniciar" id="" placeholder="Escriba su email">
-                    <label for="login-password">Contraseña</label>
-                    <input class="input-escribir" type="password" name="password-iniciar" id="" placeholder="Escriba su contraseña">
-                    <input class="input-button" type="submit" value="Iniciar Sesión">
+                <h2>¡Iniciate en nuestra web!</h2>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Dirección de email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+                <button type="button" class="btn color-boton-busqueda">Iniciar Sesión</button>
+                <button type="button" class="btn btn-outline-secondary">Crearse una cuenta</button>
             </div>
         </section>
     </main>
