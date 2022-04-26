@@ -56,33 +56,35 @@
     </header>
     <!-- FIN HEADER -->
     <!-- INICIO CONTENT-->
-    <main>
-        <form class="contacto">
-            <fieldset class="contacto">
-                <legend>Formulario de contacto</legend>
-                <label for="nombre_apellido">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Escribir su nombre">
-                <label for="nombre_apellido">Apellido:</label>
-                <input type="text" name="apellido" placeholder="Escribir su apellido">
-                <label for="email">Email:</label>
-                <input type="text" name="email" placeholder="Escriba su email">
-                <select name="problema">
-                    <option value="seleccionar">Motivo de contacto</sup></option>
-                    <option value="mayor">Quiero comprar por mayor!</option>
-                    <option value="problemacompra">Problemas con mi compra</option>
-                    <option value="problemaenvio">Inconvenientes con el envío</option>
-                    <option value="paquetemal">Paquete en mal estado</option>
-                </select>
-                <div>Desarrolla tu razón de contacto</div>
-                <textarea name"text" cols="50" rows"30" placeholder="Escriba su opinión acá"></textarea>
-                <input type="submit" value="Enviar">
-            </fieldset>
-        </form>  
-        <article>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem mollitia aut nihil ratione molestias nam doloremque, placeat eligendi repellendus ab accusamus explicabo earum officia corrupti perspiciatis quisquam numquam minus. Consequatur id laudantium repudiandae neque consequuntur porro, quo expedita unde ipsa, nobis cum reiciendis! Laborum quasi obcaecati dicta sunt, reiciendis quos aspernatur? Eveniet, quam dolorem. Nesciunt cum deleniti amet atque veniam nam minima temporibus quod delectus culpa, illo harum modi! Dicta iure vero beatae ad odit dignissimos rem exercitationem eligendi, enim, accusantium eaque ab, non animi necessitatibus quis labore maxime. Facilis perspiciatis eaque placeat libero voluptas iure inventore? Beatae illum magni quisquam atque velit repellendus labore amet, quos id aspernatur illo iste architecto tenetur aperiam iure molestiae blanditiis fugiat aliquid qui. Eos nesciunt molestiae, obcaecati consequatur soluta ducimus et? Totam saepe amet illo rem doloribus, beatae, at optio deleniti explicabo minus commodi repudiandae. Voluptate harum inventore impedit quibusdam quia ipsum consectetur sint maiores veritatis ullam possimus, rerum quis tempore, repellat repellendus nihil sit alias voluptatibus molestias, in est aliquam explicabo deserunt. Assumenda architecto id quisquam. Porro laboriosam repellendus quam sequi sunt eligendi quod minus. Impedit excepturi eveniet unde incidunt harum labore? Debitis deserunt odit odio tempora officiis. Perspiciatis at nulla rem illum facilis aspernatur aliquid, consectetur quibusdam sit ea ipsa assumenda asperiores neque non, autem sunt tempora itaque? Necessitatibus esse eum inventore rem deleniti, atque exercitationem quisquam doloremque hic veritatis voluptatum sapiente assumenda nemo, nihil, placeat quidem sint incidunt fugit dignissimos repellendus eius saepe molestiae corrupti. Officiis similique pariatur harum illo exercitationem provident ut. Deserunt ut quis est. Ducimus possimus corrupti iusto. Magni necessitatibus voluptate veniam quam dolorum consequatur odit quae vitae ducimus voluptas placeat nesciunt ut earum, tempora enim dignissimos repellat praesentium impedit, nisi nam fugit deserunt! Ut, inventore atque, enim quos consectetur, et nostrum labore nulla exercitationem numquam sed? Excepturi esse magni unde, sunt doloremque sed exercitationem dolores corrupti enim dolorem cum quam odio, reprehenderit atque laudantium iste qui autem nulla rerum? Quam delectus omnis iste obcaecati soluta saepe quaerat vel suscipit consequatur minus tempora voluptatibus reprehenderit id, quisquam laudantium nihil. Corporis natus voluptate quisquam sed? Pariatur dolorum aperiam eveniet, sunt aliquid temporibus provident repudiandae praesentium, dolore mollitia omnis nisi quam! Reiciendis molestiae, adipisci repellendus rem libero, expedita obcaecati nesciunt laborum a consequatur possimus repellat ex sapiente autem quam sit exercitationem eius officiis aliquam. Odio distinctio dignissimos excepturi expedita. Itaque dolor iusto pariatur sunt dolorum fugiat laborum reiciendis eveniet, sequi quo earum natus odio tempore dignissimos! Temporibus, reprehenderit. Commodi deserunt velit, distinctio ea quam nam tempore! Et nemo earum officia sapiente facilis reprehenderit alias temporibus odit nostrum non. Illum ex cumque similique voluptate reiciendis porro, explicabo nisi hic architecto dolorum aliquid non dicta sit quaerat praesentium est repellat? Laboriosam repudiandae voluptas a, impedit dignissimos hic animi sapiente ipsa recusandae culpa, molestiae perferendis non temporibus commodi enim soluta veritatis rem, dolor officia tempore sint modi ut qui sed. Fugiat repellat commodi maxime aliquid! Et porro assumenda id accusantium aperiam pariatur error nisi, repellendus, dignissimos autem, maiores non laboriosam suscipit nostrum.
-            </p>
-        </article>  
+    <main class="main-contacto">
+        <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descríbenos la razón de contacto</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Si es necesario, adjuntá fotos</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+            <div class="boton-enviar-contacto">
+                <button type="submit" class="btn color-boton-busqueda">Enviar</button>
+            </div>
+            <div class="contenedor-contacto">
+                <section>
+                    <img src="../images/favicon.png" alt="INFUSA">
+                </section>
+                <section>
+                    <ul>
+                        <li><strong>CONTACTO</strong></li>
+                        <li>+54 11 23787015</li>
+                        <li>ventasweb@infusa.ar</li>
+                        <li>www.infusa.ar</li>
+                </ul>
+                </section>
+            </div>
     </main>
     <!-- FIN CONTENT -->
     <footer>

@@ -29,6 +29,8 @@ header, section a, footer, footer ul{
     padding: 8px 0;
 }
 .texto-barra-superior{
+    font-size: calc(0.5rem + .5vw);
+    min-height: 20px;
     display: inline;
     word-spacing: 0.5em;
     margin: 0 30px;
@@ -45,19 +47,21 @@ header, section a, footer, footer ul{
 .logo-top{
     margin: 20px;
     width: 280px;
-    animation-name: logoin;
-    animation-duration: 3s;
+}
+.logo-top-index{
+    animation-name: logo-in;
+    animation-duration: 2s;
     animation-iteration-count: ease-in;
 }
-@keyframes logoin {
+@keyframes logo-in {
     0%{
         opacity: 0%;
     }
-    100%{
-        opacity: 100%;
-    }
 }
     /* BARRA NAVEGACIÓN */
+nav ul{
+    margin: 0 auto;
+}
 .color-propio{
     background-color: #ff98c4;
     color: black;
@@ -211,18 +215,18 @@ header, section a, footer, footer ul{
     margin: 20px;
     font-weight: 200;
 }
-.contenedor-contacto-paquete{
+.contenedor-contacto{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: auto;
     padding-top: 40px;
 }
-.contenedor-contacto-paquete img{
+.contenedor-contacto img{
     height: 82px;
     margin-right: 10px;
 }
-.contenedor-contacto-paquete ul{
+.contenedor-contacto ul{
     list-style: none;
 }
 /* FIN TU PAQUETE */
@@ -241,12 +245,13 @@ header, section a, footer, footer ul{
 }
 /* FIN INICIAR SESIÓN */
 /*      FORM CONTACTO   */
-.contacto{
-    display: inline-block;
-    margin: 3em 0 3em 0;
+.main-contacto{
+    margin: 50px auto;
+    width: 500px;
 }
-form.contacto{
-    padding-left: 25%;
+.boton-enviar-contacto{
+    display: flex;
+    justify-content: center;
 }
 /*      FOOTER          */
 footer{
@@ -303,11 +308,11 @@ footer{
         flex-flow: column wrap;
         line-height: calc(100% * 2);
     }
-}
-@media screen and (max-width: 768px) {
-    .texto-barra-superior{
+    .contenedor-boton-ver-mas button{
         font-size: 1.5em;
     }
+}
+@media screen and (max-width: 768px) {
     .logo-top{
         width: 400px;
     }
