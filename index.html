@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <title>Tienda Online de Infusa</title>
@@ -55,7 +56,7 @@
         </nav>
         <!-- banners -->
         <section>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div data-aos="zoom-out" data-aos-duration="1000" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="images/banner1.jpeg" class="d-block w-100" alt="...">
@@ -82,7 +83,7 @@
     <!-- INICIO CONTENT-->
     <main>
         <section class="section-index">
-            <div class="titulo-tienda">
+            <div data-aos="flip-left" data-aos-duration="2500" class="titulo-tienda">
                 <h1>
                     TIENDA ONLINE
                 </h1>
@@ -90,78 +91,70 @@
                     ¡Llevá todos nuestros productos con 10% de descuento!
                 </p>
             </div>
-            <div class="contenedor-categorias">
+            <div data-aos="fade-up" data-aos-duration="1500" class="grid-categorias">
                 <!-- categoria -->
                 <div class="categoria">
-                    <div class="contenedor-categoria-interno">
-                        <a href="#">
-                            <div>
-                                <img src="images/cartas.png" alt="MAZOS">
-                            </div>
-                            <div class="titulo-categoria">
-                                <p>
-                                    MAZOS INFUSA
-                                </p>
-                                <p>
-                                    DE ILUSTRACIÓN PROPIA
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <img src="images/cartas.png" alt="MAZOS">
+                        </div>
+                        <div class="titulo-categoria">
+                            <p>
+                                MAZOS INFUSA
+                            </p>
+                            <p>
+                                DE ILUSTRACIÓN PROPIA
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <!-- fin categoria -->
                 <div class="categoria">
-                    <div class="contenedor-categoria-interno">
-                        <a href="#">
-                            <div>
-                                <img src="images/velas.jpg" alt="VELAS DE SOJA">
-                            </div>
-                            <div class="titulo-categoria">
-                                <p>
-                                    VELAS DE SOJA
-                                </p>
-                                <p>
-                                    AROMÁTICAS
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <img src="images/velas.jpg" alt="VELAS DE SOJA">
+                        </div>
+                        <div class="titulo-categoria">
+                            <p>
+                                VELAS DE SOJA
+                            </p>
+                            <p>
+                                AROMÁTICAS
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <!--  -->
                 <div class="categoria">
-                    <div class="contenedor-categoria-interno">
-                        <a href="#">
-                            <div>
-                                <img src="images/limpieza.jpg" alt="LIMPIEZA ENERGÉTICA">
-                            </div>
-                            <div class="titulo-categoria">
-                                <p>
-                                    LIMPIEZA ENERGÉTICA
-                                </p>
-                                <p>
-                                    BLENDS Y SAHUMOS
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <img src="images/limpieza.jpg" alt="LIMPIEZA ENERGÉTICA">
+                        </div>
+                        <div class="titulo-categoria">
+                            <p>
+                                LIMPIEZA ENERGÉTICA
+                            </p>
+                            <p>
+                                BLENDS Y SAHUMOS
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <!--  -->
                 <div class="categoria">
-                    <div class="contenedor-categoria-interno">
-                        <a href="#">
-                            <div>
-                                <img src="images/tarot.jpg" alt="TAROT">
-                            </div>
-                            <div class="titulo-categoria">
-                                <p>
-                                    CONSULTAS DE TAROT
-                                </p>
-                                <p>
-                                    DIVERSAS MODALIDADES
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <img src="images/tarot.jpg" alt="TAROT">
+                        </div>
+                        <div class="titulo-categoria">
+                            <p>
+                                CONSULTAS DE TAROT
+                            </p>
+                            <p>
+                                DIVERSAS MODALIDADES
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="contenedor-boton-ver-mas">
@@ -173,7 +166,9 @@
     <footer>
         <div class="grid-padre-footer">
             <div class="grid-hijo-footer-left">
-                <img src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" alt="Data fiscal">
+                <a href="http://qr.afip.gob.ar/?qr=mCtsM2XyULVOq0Wjyrn3HQ,," target="_F960AFIPInfo">
+                    <img src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" alt="Data fiscal">
+                </a>
             </div>
             <div class="grid-hijo-footer-right">
                 <ul>
@@ -195,5 +190,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
