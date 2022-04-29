@@ -263,10 +263,10 @@ footer{
     height: 175px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 .grid-hijo-footer-left img{
-    height: 175px;
+    height: 100%;
     padding: 10px;
 }
 .grid-hijo-footer-right h5{
@@ -277,7 +277,7 @@ footer{
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 0.5rem;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 /* creditos */
 .grid-hijo-footer-credits{
