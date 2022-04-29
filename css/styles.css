@@ -260,9 +260,10 @@ footer{
 }
 /* data fiscal y contacto */
 .grid-hijo-footer-left{
+    height: 175px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 .grid-hijo-footer-left img{
     height: 175px;
@@ -276,7 +277,7 @@ footer{
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 0.5rem;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 /* creditos */
 .grid-hijo-footer-credits{
