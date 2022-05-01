@@ -20,7 +20,7 @@ body{
     padding-bottom: calc(217px + 2em);
     min-height: 100vh;
 }
-header, section a, footer, footer ul{
+header, section a, .grid-contacto ul, footer, footer ul{
     text-decoration: none;
     list-style: none;
 }
@@ -64,7 +64,6 @@ header, section a, footer, footer ul{
 nav ul{
     margin: 0 auto;
 }
-
 .color-propio{
     background-color: #ff98c4;
     color: black;
@@ -81,17 +80,9 @@ nav ul{
     0%{
         opacity: 0%;
     }
-    100%{
-        opacity: 100%;
-    }
 }
-    /* BANNER */
-    /* FIN BANNER */
 /* FIN HEADER */
 /* categorias INICIO */
-.section-index{
-    /* margin: 0 0px; */
-}
 .titulo-tienda-index{
     font-size: calc(100% * 1.3);
     font-family: 'Asap Condensed', sans-serif;
@@ -228,9 +219,6 @@ nav ul{
 .grid-contacto img{
     height: 100%;
 }
-.grid-contacto ul{
-    list-style: none;
-}
 /* FIN TU PAQUETE */
 /* INICIAR SESIÓN */
 .iniciar-sesion{
@@ -356,10 +344,5 @@ footer{
     }
     .buscador{
         justify-content: center;
-    }
-}
-@media screen and (max-width: 426px) {
-    .main-productos{
-        /* max-width: 70vw; */
     }
 }
