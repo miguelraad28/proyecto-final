@@ -56,19 +56,22 @@
     </header>
     <!-- FIN HEADER -->
     <!-- INICIO CONTENT-->
-    <main class="main-contacto">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Descríbenos la razón de contacto</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>            <div class="mb-3">
-            <label for="formFileMultiple" class="form-label">Si es necesario, adjuntá fotos</label>
-            <input class="form-control" type="file" id="formFileMultiple" multiple>
-        </div>
-        <div class="boton-enviar-contacto">                <button type="submit" class="btn color-boton-busqueda">Enviar</button>
+    <main>
+        <div class="grid-form-contacto">
+            <h2>¡Contáctate con nosotros!</h2>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Dirección de email</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descríbenos la razón de tu contacto"></textarea>
+            </div>            
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Si es necesario, adjuntá fotos</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+            <button type="button" class="btn color-boton-busqueda">Enviar</button>
         </div>
         <div class="grid-contacto">
             <div>

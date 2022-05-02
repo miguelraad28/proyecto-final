@@ -86,16 +86,17 @@ nav ul{
 .titulo-tienda-index{
     font-size: calc(100% * 1.3);
     font-family: 'Asap Condensed', sans-serif;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0 20px;
 }
 .grid-categorias{
     display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 300px));
     justify-content: center;
     margin: 0 20px;
 }
@@ -232,13 +233,16 @@ nav ul{
 }
 /* FIN INICIAR SESIÓN */
 /*   FORM CONTACTO   */
-.main-contacto{
-    margin: 50px auto;
-    width: 500px;
-}
-.boton-enviar-contacto{
-    display: flex;
+.grid-form-contacto{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 500px));
     justify-content: center;
+    margin: 50px 20px;
+    gap: 10px;
+}
+.grid-form-contacto h2{
+    text-align: center;
 }
 /*      FOOTER          */
 footer{
